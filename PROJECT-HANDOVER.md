@@ -33,9 +33,9 @@ Do not exaggerate my professional AI experience. Practical examples can be hypot
 
 ## 3. Repository Structure
 
-Use the following initial structure:
+Use the following initial structure. The sections sit directly at the repository root, there is no wrapping `ai-knowledge/` folder:
 
-ai-knowledge/
+(repository root)/
 │
 ├── README.md
 │
@@ -71,6 +71,20 @@ ai-knowledge/
     └── evaluation-and-production.md
 
 This is the initial structure, not a rigid restriction. If a file becomes too large or multiple concepts deserve independent treatment, propose a sensible split.
+
+### Topic placement decisions
+
+Where a topic could fit in more than one file, it lives here:
+
+- System prompts vs user prompts: `prompt-engineering.md`.
+- Agent harness: `ai-agents-and-agentic-systems.md`.
+- LangChain vs LangGraph and multi-agent systems: `agent-orchestration.md`.
+- Sub-agent delegation and coordination: `skills-and-sub-agents.md` (primary). Orchestration only links to it.
+- AGENTS.md, CLAUDE.md, GEMINI.md, context.md, MEMORY.md, the instruction vs context vs memory vs skills comparison and instruction hierarchy: `instructions-context-and-memory.md`.
+- Traditional ML vs deep learning vs generative AI, and supervised vs unsupervised vs reinforcement learning: `model-training-and-fine-tuning.md`.
+- Open-source vs proprietary models and AI coding assistants: `evaluation-and-production.md`. If it becomes crowded, split AI coding assistants into its own file.
+
+The inventory in section 4 has 45 listed topics. Cover exactly what is listed.
 
 Avoid creating excessive small files.
 
@@ -215,9 +229,36 @@ The second explanation is the preferred writing style.
 
 Do not oversimplify concepts to the point of becoming technically incorrect.
 
-## 6. Standard Structure for Every Topic
+### Core philosophy
 
-Use the following structure as the default template.
+The purpose of this repository is not to hold information that is already available on the web. Anyone can browse many separate pages. The value here is a single connected journey where each concept makes sense in the context of the others, in a consistent voice, at a consistent depth.
+
+Before finalizing any file, apply this test: imagine a technical professional with basic software knowledge lands on this page to understand AI terms and concepts for the first time. Does it feel bookish, loaded, or boring? Would they keep reading? Does it make them understand the concept well enough to start discussing it? If not, it is not serving its purpose.
+
+The target is a good starting point to mid-level understanding: not so short and narrow that it is shallow, and not so large and heavy that it is tiring. The presentation should be simple and approachable, but the technical meaning must never be diluted.
+
+The repository is general-purpose learning material. It is not tied to any single interview, company or deadline.
+
+### Reading experience
+
+The content should read like a well-made technical documentation website (it may later be published with a static site generator such as VitePress), not like a textbook or a study guide.
+
+- Imagine a technical professional landing on a page to get familiar with a concept. It should be easy to start, pleasant to keep reading, and still technically precise.
+- Tone: light, conversational and a little playful. No jokes or emojis that could date the content or feel unprofessional.
+- Explain the idea first with a simple analogy or a small realistic situation, then state the precise mechanism. The analogy must never replace or dilute the real meaning.
+- Prefer flowing prose in short paragraphs. Use bullets and tables only when they genuinely help, for example when comparing options.
+- Headings should be natural and descriptive. Do not repeat the same fixed labels (such as "Why this matters" or "Things to know") in every topic.
+- Weave limitations and trade-offs into the explanation where they naturally appear.
+- Aim for the middle ground: enough depth to build real understanding and to start discussing the topic with other engineers, but not so short that it is shallow, and not so long that it is tiring.
+- Not every topic needs an opening hook. Use one only when it helps.
+
+### Continuity across topics
+
+The content should read as a connected journey. When a topic depends on an earlier one, say so briefly and link to it. When a topic sets up a later one, mention where it leads. A reader going through the files in order should feel the concepts building on each other.
+
+## 6. Structure for Topics
+
+The following is a checklist of what a topic should cover, not a fixed layout. Do not turn it into repeated headings. Cover these points in whatever order and shape makes the explanation flow naturally, starting from the problem or the intuition rather than from a definition.
 
 ### 1. What is it?
 Explain the concept in simple language. Start with the direct meaning rather than a long introduction.
@@ -255,7 +296,11 @@ Where useful, briefly explain how this topic connects to other areas of AI.
 
 This section is optional when the connection is obvious or would create unnecessary repetition.
 
-Important: This is a flexible template, not a mandatory checklist. Do not force every heading into every topic. Keep the explanation natural.
+Important: This is a flexible guide, not a mandatory template. Do not force every point into every topic or use these as headings. Keep the explanation natural.
+
+### Accuracy over polish
+
+Every factual claim that depends on a provider, a model or a current product behaviour should be verified against official documentation or a primary source before it is written. Where behaviour differs between providers or changes often, say so instead of stating one behaviour as universal.
 
 ## 7. Examples and Practical Scenarios
 
@@ -302,25 +347,19 @@ For example, explain what HNSW does and why it is used, but do not spend pages d
 
 The target is strong conceptual and practical understanding, not research-level specialization.
 
-## 9. Priority and Depth
+## 9. Depth
 
-Use three priority levels internally within the notes:
-
-- HIGH: Core concepts that should be understood properly and explained confidently.
-- MEDIUM: Important supporting concepts that require a good conceptual understanding.
-- BASIC: Concepts where a clear high-level understanding is sufficient.
-
-These labels should appear next to topic headings, not in a separate progress tracker.
+Do not use priority labels (HIGH, MEDIUM, BASIC) or any similar tags in headings or anywhere else in the repository.
 
 Depth should depend on the topic's importance.
 
-For HIGH topics, cover the concept, working mechanism, examples, important details, limitations and trade-offs.
+For core topics, cover the concept, working mechanism, examples, important details, limitations and trade-offs.
 
-For MEDIUM topics, provide a good explanation and relevant examples without excessive depth.
+For supporting topics, provide a good explanation and relevant examples without excessive depth.
 
-For BASIC topics, focus on what it means, why it exists and where it is used.
+For simple topics, focus on what it means, why it exists and where it is used.
 
-Do not confuse priority with document length. A short explanation can still be technically complete.
+Do not confuse importance with document length. A short explanation can still be technically complete.
 
 ## 10. Accuracy and Research Standards
 
@@ -380,6 +419,16 @@ Add internal links between related documents.
 
 Avoid excessively deep heading hierarchies.
 
+### Keeping the content publishable as a website
+
+The content may later be published with VitePress (or a similar static site generator), so keep it portable:
+
+- Use plain Markdown. Avoid raw HTML. Angle brackets in text should be inside backticks or code blocks.
+- Use relative links between files, and link to headings that actually exist.
+- Keep one H1 per file, matching the page title.
+- Mermaid diagrams are fine, but keep them simple, since they may need a plugin to render on the site.
+- Do not depend on features specific to one platform's Markdown renderer.
+
 Each file should have a clear scope and should be independently understandable.
 
 ## 13. Repository Maintenance Rules
@@ -397,29 +446,47 @@ Whenever new concepts are added:
 
 Do not introduce preparation status, interview tracking, daily progress, or personal notes into the repository.
 
-## 14. Initial Execution Instructions
+## 14. Execution Instructions
 
-Before creating files:
+### Initial setup (done)
 
-1. Inspect the repository and confirm its current contents.
-2. Understand the complete project requirements in this document.
-3. Create the proposed directory structure.
-4. Create the root README and section-level READMEs.
-5. Create the topic files with clear headings and placeholders or concise topic outlines.
-6. Ensure that every topic in the inventory has an assigned location.
-7. Check that internal links and filenames are consistent.
+The directory structure, the root README, the section READMEs and heading-only outlines for every topic file have been created. Every topic in the inventory has an assigned file.
 
-For this initial task, focus on building the repository structure and organizing the topic inventory.
+### How content is written from here
 
-Do not attempt to generate all 47 topic explanations in one massive operation.
+Content is written and reviewed one file at a time. Never write several content files in one go.
 
-After setting up the structure, show me:
-- The final directory tree.
-- The mapping of every topic to its file.
-- Any recommended structural changes.
-- Any topics that may overlap and how you handled them.
+1. Write one file.
+2. Show it for review and wait. Format, tone, depth and structure are adjusted at this stage.
+3. Apply the agreed changes, and only then move on to the next file.
 
-Wait for my approval before generating the complete topic content.
+Never generate content for many files at once. If a structural change is agreed, apply it consistently across the repository.
+
+Suggested writing order, so that later topics can link to earlier ones:
+
+1. Section 1, LLM fundamentals (tokens, context window, system vs user prompts first).
+2. Tool calling basics from Section 3.
+3. Section 4, context engineering.
+4. The remaining sections.
+
+The Section 1 file `llm-fundamentals.md` is the reference for tone, depth and format. New files should feel like they belong to the same site.
+
+### Running example
+
+Use one hypothetical enterprise scenario as a thread through a document (for example an employee asking an internal assistant about leave policy), so that topics within a file connect. Always present it as a hypothetical example.
+
+### Verification workflow
+
+Claude Code may not have web access in every environment. When it does not:
+
+- Write using well-established claims only.
+- Do not state provider-specific details (parameter ranges, which models restrict which settings, current limits, product behaviour) unless verified. Say that the behaviour varies and point the reader to the provider's documentation.
+- Verification happens afterwards as a single review pass, for example by pasting a finished file into a web-enabled assistant. Keep the claims easy to check by hedging provider-dependent statements and avoiding absolutes.
+- Avoid repeated rewrite loops. Fix real issues once, and do not change tone or structure that has already been agreed.
+
+### Git
+
+Do not commit or push unless explicitly asked.
 
 ## 15. Most Important Principle
 
