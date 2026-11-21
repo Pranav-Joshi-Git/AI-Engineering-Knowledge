@@ -188,4 +188,6 @@ RAG quality depends on the entire pipeline, not just the LLM or vector database.
 | RAG vs fine-tuning? | External knowledge retrieval vs updating model parameters. |
 | Does RAG eliminate hallucinations? | No, it reduces risk by grounding answers in retrieved evidence. |
 
-**Next:** AI Agents and Agentic Systems.
+---
+
+[← Previous: Embeddings and Vector Databases](01-embeddings-and-vector-databases.md) · [Next: AI Agents and Agentic Systems →](../03-ai-agents/01-ai-agents-and-agentic-systems.md)

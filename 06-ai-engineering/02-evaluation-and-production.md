@@ -153,3 +153,7 @@ For AI systems, testing should cover not only application code but also model be
 | What is model routing? | Selecting models based on task requirements. |
 | Open-weight vs proprietary? | Accessible model weights vs provider-controlled model weights. |
 | What is AI CI/CD? | Automated testing, evaluation, deployment and monitoring of AI applications. |
+
+---
+
+[← Previous: Model Training and Fine-Tuning](01-model-training-and-fine-tuning.md)

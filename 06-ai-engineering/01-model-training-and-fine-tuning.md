@@ -140,3 +140,7 @@ Trade-off: Aggressive quantization can reduce model quality or accuracy.
 | What is transfer learning? | Reusing knowledge learned from another task. |
 | What is LoRA? | Parameter-efficient fine-tuning using low-rank trainable matrices. |
 | What is quantization? | Reducing numerical precision to optimize model size and inference. |
+
+---
+
+[← Previous: AI Security and Reliability](../05-ai-security-and-reliability/01-ai-security-and-reliability.md) · [Next: Evaluation and Production of AI Systems →](02-evaluation-and-production.md)

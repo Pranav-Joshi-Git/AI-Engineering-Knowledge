@@ -382,7 +382,4 @@ These limitations are addressed through techniques such as RAG, context engineer
 
 ---
 
-**What comes next?**
-
-Understanding how to communicate a task to an LLM effectively: `prompt-engineering.md`.
-
+[Next: Prompt Engineering →](02-prompt-engineering.md)

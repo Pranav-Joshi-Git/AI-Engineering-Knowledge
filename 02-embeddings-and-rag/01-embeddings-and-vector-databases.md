@@ -169,4 +169,6 @@ The right choice depends on scale, infrastructure, filtering requirements, opera
 | HNSW vs IVF? | Graph-based navigation vs cluster-based search. |
 | Is FAISS a vector database? | Primarily a similarity-search library, not a complete database. |
 
-**Next:** RAG Architecture and Optimization.
+---
+
+[← Previous: Prompt Engineering](../01-llm-fundamentals/02-prompt-engineering.md) · [Next: RAG Architecture and Optimization →](02-rag-architecture-and-optimization.md)

@@ -145,3 +145,7 @@ An MCP connection does not automatically make a tool safe or authorized.
 | What communication format does MCP use? | JSON-RPC 2.0. |
 | What are its common transports? | stdio and Streamable HTTP. |
 | Is MCP itself an AI agent? | No, it is a protocol that enables integrations for AI applications. |
+
+---
+
+[← Previous: Tools and Function Calling](02-tools-and-function-calling.md) · [Next: Agent Orchestration →](04-agent-orchestration.md)

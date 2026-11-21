@@ -130,3 +130,7 @@ Good orchestration requires clear task boundaries, controlled delegation, output
 | What is LangGraph? | Framework for stateful, graph-based agent workflows. |
 | Is multi-agent always better? | No, it introduces additional coordination, cost and latency. |
 | What does a manager agent do? | Delegates tasks, coordinates execution and combines results. |
+
+---
+
+[← Previous: Model Context Protocol (MCP)](03-mcp.md) · [Next: Instructions, Context and Memory →](../04-context-engineering/01-instructions-context-and-memory.md)

@@ -138,3 +138,7 @@ Also, there is no universal precedence order across all AI tools. Each tool defi
 | What is MEMORY.md? | A convention for retaining useful information across sessions. |
 | Why is context management important? | Improves relevance while controlling token usage. |
 | Is there a universal instruction hierarchy? | No, precedence depends on the tool's implementation. |
+
+---
+
+[← Previous: Agent Orchestration](../03-ai-agents/04-agent-orchestration.md) · [Next: Skills and Sub-Agents →](02-skills-and-sub-agents.md)

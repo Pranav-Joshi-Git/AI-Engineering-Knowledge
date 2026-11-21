@@ -135,3 +135,7 @@ The model should never be treated as the security boundary. Enforce permissions 
 | Tool calling vs API calling? | Model-driven tool selection vs direct application-driven API execution. |
 | Tool calling vs structured output? | Requesting an action vs generating data in a defined format. |
 | How do you secure tool execution? | Validation, authorization, restricted permissions and human approval. |
+
+---
+
+[← Previous: AI Agents and Agentic Systems](01-ai-agents-and-agentic-systems.md) · [Next: Model Context Protocol (MCP) →](03-mcp.md)

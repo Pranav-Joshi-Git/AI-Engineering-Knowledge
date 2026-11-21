@@ -189,4 +189,6 @@ Retrieving the correct policy documents, selecting relevant conversation history
 | Why use structured output? | Makes responses easier to validate and integrate into applications. |
 | Prompt vs context engineering? | Designing instructions vs managing the complete information supplied to the model. |
 
-**Next:** Embeddings and Vector Databases.
+---
+
+[← Previous: LLM Fundamentals](01-llm-fundamentals.md) · [Next: Embeddings and Vector Databases →](../02-embeddings-and-rag/01-embeddings-and-vector-databases.md)

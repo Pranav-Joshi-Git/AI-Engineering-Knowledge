@@ -130,3 +130,7 @@ They can work together. An agent can use a skill that explains how to investigat
 | Skills vs sub-agents? | Reusable knowledge vs delegated execution. |
 | Skills vs MCP? | Instructions for performing tasks vs standardized external integrations. |
 | Can a sub-agent use skills? | Yes, depending on the agent platform. |
+
+---
+
+[← Previous: Instructions, Context and Memory](01-instructions-context-and-memory.md) · [Next: AI Security and Reliability →](../05-ai-security-and-reliability/01-ai-security-and-reliability.md)

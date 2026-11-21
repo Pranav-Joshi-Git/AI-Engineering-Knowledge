@@ -138,3 +138,7 @@ The key principle is to never rely on the LLM alone to enforce security.
 | How do you prevent data leakage? | Authorization, least privilege, data protection and auditing. |
 | What is Responsible AI? | Developing and deploying AI safely, fairly and accountably. |
 | Why are agents riskier? | They can execute actions and interact with external systems. |
+
+---
+
+[← Previous: Skills and Sub-Agents](../04-context-engineering/02-skills-and-sub-agents.md) · [Next: Model Training and Fine-Tuning →](../06-ai-engineering/01-model-training-and-fine-tuning.md)

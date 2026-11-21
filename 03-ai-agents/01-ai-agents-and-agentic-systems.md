@@ -166,4 +166,6 @@ Production agents need bounded execution, tool permissions, validation, logging 
 | What is an agent harness? | Infrastructure that manages execution, tools, state and controls. |
 | Why is human approval important? | To control sensitive or high-impact actions. |
 
-**Next:** Tools and Function Calling.
+---
+
+[← Previous: RAG Architecture and Optimization](../02-embeddings-and-rag/02-rag-architecture-and-optimization.md) · [Next: Tools and Function Calling →](02-tools-and-function-calling.md)
