@@ -64,6 +64,13 @@ export default defineConfig({
           { text: 'Evaluation and Production', link: '/06-ai-engineering/02-evaluation-and-production' },
         ],
       },
+      {
+        text: 'Misc (temporary)',
+        items: [
+          { text: 'App Subscription Analysis', link: '/07-misc/ASA_INTERVIEW_PREP' },
+          { text: 'ML Career Guidance Tool', link: '/07-misc/CG_INTERVIEW_PREP' },
+        ],
+      },
     ],
 
     search: { provider: 'local' },
